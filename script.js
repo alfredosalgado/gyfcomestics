@@ -110,7 +110,7 @@ function createProductCard(product) {
     }
 
     return `
-        <div class="product-card" onclick="openProductModal(${product.id})">
+        <div class="product-card" onclick="window.location.href='producto-${product.id}.html'">
             <img src="img/productos/${product.mainImage}" alt="${product.name}" class="product-image" loading="lazy">
             <div class="product-info">
                 <div class="product-category">${product.categoryName}</div>
@@ -140,6 +140,15 @@ function filterProducts(category) {
     const activeButton = document.querySelector(`[onclick="filterProducts('${category}')"]`);
     if (activeButton) {
         activeButton.classList.add('active');
+    }
+    
+    // Mostrar/ocultar descripciones de categoría
+    const descriptions = document.querySelectorAll('.category-description');
+    descriptions.forEach(desc => desc.classList.add('hidden'));
+    
+    const activeDescription = document.getElementById(`desc-${category}`);
+    if (activeDescription) {
+        activeDescription.classList.remove('hidden');
     }
     
     // Filtrar y mostrar productos
@@ -209,8 +218,8 @@ function openProductModal(productId) {
 // Crear contenido del modal de producto
 function createProductModalContent(product) {
     const whatsappMessage = encodeURIComponent(`Hola, quiero cotizar el producto: ${product.name}`);
-    const whatsappUrl1 = `https://api.whatsapp.com/send?phone=569985647272&text=${whatsappMessage}`;
-    const whatsappUrl2 = `https://api.whatsapp.com/send?phone=569992934675&text=${whatsappMessage}`;
+    const whatsappUrl1 = `https://api.whatsapp.com/send?phone=56985647272&text=${whatsappMessage}`;
+    const whatsappUrl2 = `https://api.whatsapp.com/send?phone=56992934675&text=${whatsappMessage}`;
     
     return `
         <div class="product-gallery">
@@ -402,27 +411,58 @@ function setupScrollToTop() {
     const scrollBtn = document.createElement('button');
     scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
     scrollBtn.className = 'scroll-to-top';
-    scrollBtn.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: var(--primary-color);
-        color: white;
-        border: none;
-        cursor: pointer;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-        box-shadow: var(--shadow-lg);
-        transition: var(--transition);
-        z-index: 1000;
-    `;
+    
+    // Aplicar estilos responsive
+    function updateScrollButtonStyles() {
+        const isMobile = window.innerWidth <= 480;
+        const isTablet = window.innerWidth <= 768;
+        
+        let bottomPos = '20px';
+        let rightPos = '20px';
+        let size = '50px';
+        let fontSize = '1.2rem';
+        
+        if (isMobile) {
+            bottomPos = '10px';
+            rightPos = '10px';
+            size = '45px';
+            fontSize = '1rem';
+        } else if (isTablet) {
+            bottomPos = '15px';
+            rightPos = '15px';
+            size = '48px';
+            fontSize = '1.1rem';
+        }
+        
+        scrollBtn.style.cssText = `
+            position: fixed;
+            bottom: ${bottomPos};
+            right: ${rightPos};
+            width: ${size};
+            height: ${size};
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: ${fontSize};
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            z-index: 1000;
+            max-width: calc(100vw - 20px);
+            max-height: calc(100vh - 20px);
+        `;
+    }
+    
+    updateScrollButtonStyles();
     
     document.body.appendChild(scrollBtn);
+    
+    // Actualizar estilos cuando cambie el tamaño de ventana
+    window.addEventListener('resize', updateScrollButtonStyles);
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 300) {

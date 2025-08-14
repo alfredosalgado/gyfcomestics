@@ -6,12 +6,15 @@ const products = [
         name: "VITA Gold Premium",
         category: "vita",
         categoryName: "Línea Capilar VITA",
-        shortDescription: "Tratamiento capilar intensivo premium",
-        fullDescription: "El VITA Gold Premium es un tratamiento capilar intensivo de alta gama, ideal para la venta en supermercados, minimarkets y almacenes. Su fórmula avanzada ofrece resultados profesionales que tus clientes buscan.",
+        shortDescription: "Tratamiento sin enjuague intensivo premium",
+        fullDescription: "El VITA Gold Premium es un tratamiento capilar sin enjuague de alta gama con tecnología avanzada de reparación instantánea. Su fórmula concentrada con activos premium ofrece resultados profesionales de salón desde la primera aplicación, ideal para cabellos severamente dañados.",
         benefits: [
-            "Repara el daño en cada aplicación",
-            "Ofrece hidratación y restauración profunda", 
-            "Controla el frizz y aporta fortalecimiento al cabello"
+            "Tratamiento sin enjuague - reparación instantánea",
+            "Tecnología premium de reconstrucción capilar",
+            "Repara el daño severo en cada aplicación",
+            "Hidratación y restauración profunda intensiva", 
+            "Controla el frizz y aporta fortalecimiento extremo",
+            "Resultados visibles desde el primer uso"
         ],
         businessAttributes: [
             "Alta Rotación: Producto premium con gran demanda en el mercado chileno",
@@ -30,12 +33,15 @@ const products = [
         name: "VITA Baño de Crema - Vivan los Crespos",
         category: "vita",
         categoryName: "Línea Capilar VITA",
-        shortDescription: "Tratamiento especializado para cabello rizado",
-        fullDescription: "Este producto está específicamente diseñado para cabello rizado o 'crespo', un segmento con alta demanda en el mercado. Es un tratamiento multifuncional que ofrece múltiples beneficios en un solo producto.",
+        shortDescription: "Tratamiento sin enjuague especializado para cabello rizado",
+        fullDescription: "Baño de crema sin enjuague específicamente formulado para cabello rizado o 'crespo'. Su fórmula única con cebolla, jalea real y proteína de leche define los rizos mientras los hidrata profundamente. Ideal para el creciente mercado de cuidado capilar especializado.",
         benefits: [
+            "Tratamiento sin enjuague - aplicar y listo",
+            "Define y controla los rizos naturalmente",
             "Bomba de hidratación y fortalecimiento",
             "Múltiples usos: crema para peinar, tratamiento y acondicionador",
-            "Ingredientes clave: Cebolla, jalea real y proteína de leche"
+            "Ingredientes activos: Cebolla, jalea real y proteína de leche",
+            "Reduce el frizz y aporta brillo natural"
         ],
         businessAttributes: [
             "Nicho Específico: Dirigido al creciente mercado de cuidado para cabello rizado",
@@ -54,12 +60,15 @@ const products = [
         name: "VITA Baño de Crema - Aloe de Argán",
         category: "vita",
         categoryName: "Línea Capilar VITA",
-        shortDescription: "Tratamiento con aloe vera y aceite de argán",
-        fullDescription: "Baño de crema que combina las propiedades hidratantes del aloe vera con los beneficios reparadores del aceite de argán. Una combinación perfecta para el cuidado capilar integral.",
+        shortDescription: "Tratamiento sin enjuague con aloe vera y aceite de argán",
+        fullDescription: "Baño de crema sin enjuague que combina las propiedades calmantes e hidratantes del aloe vera con los beneficios reparadores del aceite de argán marroquí. Fórmula natural que restaura la vitalidad del cabello dañado sin necesidad de enjuague.",
         benefits: [
-            "Combina aloe vera y aceite de argán",
-            "Proporciona salud y cuidado general para el cabello",
-            "Hidratación profunda y reparación"
+            "Tratamiento sin enjuague - fácil aplicación",
+            "Aloe vera: calma el cuero cabelludo y aporta hidratación",
+            "Aceite de argán: repara y suaviza el cabello",
+            "Fórmula natural con ingredientes premium",
+            "Restaura la elasticidad y brillo natural",
+            "Protege contra factores ambientales"
         ],
         businessAttributes: [
             "Ingredientes Trending: Aloe y argán son ingredientes muy buscados",
@@ -68,7 +77,7 @@ const products = [
             "Presentación Distintiva: Envase morado fácil de identificar"
         ],
         idealFor: "Góndolas de cuidado natural, sección de belleza, minimarkets",
-        presentations: ["1000gr"],
+        presentations: ["1000g"],
         colors: ["Morado"],
         images: ["5.jpg", "7.jpg", "9.jpg", "31.jpg", "33.jpg"],
         mainImage: "5.jpg"
@@ -78,12 +87,15 @@ const products = [
         name: "VITA Baño de Crema - Extracto de Aguacate",
         category: "vita",
         categoryName: "Línea Capilar VITA",
-        shortDescription: "Tratamiento nutritivo con extracto de aguacate",
-        fullDescription: "Tratamiento capilar enriquecido con extracto de aguacate (palta), aprovechando las propiedades nutritivas de este superalimento para el cuidado del cabello.",
+        shortDescription: "Tratamiento sin enjuague nutritivo con extracto de aguacate",
+        fullDescription: "Baño de crema sin enjuague enriquecido con extracto de aguacate (palta), el superalimento capilar por excelencia. Su fórmula concentrada en vitaminas A, D, E y ácidos grasos esenciales nutre intensamente el cabello desde la raíz hasta las puntas.",
         benefits: [
-            "Extracto de aguacate (palta) nutritivo",
-            "Proporciona salud y cuidado para el cabello",
-            "Rico en vitaminas y ácidos grasos esenciales"
+            "Tratamiento sin enjuague - nutrición instantánea",
+            "Extracto de aguacate (palta) con vitaminas A, D, E",
+            "Rico en ácidos grasos esenciales y proteínas naturales",
+            "Fortalece el cabello débil y quebradizo",
+            "Aporta suavidad y manejabilidad",
+            "Protege contra la sequedad y el daño ambiental"
         ],
         businessAttributes: [
             "Superalimento: El aguacate es reconocido por sus propiedades nutritivas",
@@ -92,7 +104,7 @@ const products = [
             "Mercado Amplio: Atractivo para consumidores conscientes de la salud"
         ],
         idealFor: "Sección de productos naturales, góndolas de belleza, almacenes",
-        presentations: ["1000gr"],
+        presentations: ["1000g"],
         colors: ["Verde claro"],
         images: ["2.jpg", "6.jpg", "31.jpg"],
         mainImage: "6.jpg"
@@ -102,12 +114,15 @@ const products = [
         name: "VITA Baño de Crema - Aceite de Coco",
         category: "vita",
         categoryName: "Línea Capilar VITA",
-        shortDescription: "Tratamiento hidratante con aceite de coco",
-        fullDescription: "Tratamiento capilar con aceite de coco, conocido por sus propiedades hidratantes y reparadoras. Ideal para cabellos secos y dañados que necesitan nutrición profunda.",
+        shortDescription: "Tratamiento sin enjuague hidratante con aceite de coco",
+        fullDescription: "Baño de crema sin enjuague enriquecido con aceite de coco virgen, el hidratante natural más efectivo para el cabello. Su fórmula concentrada penetra profundamente en la fibra capilar, restaurando la humedad natural y creando una barrera protectora.",
         benefits: [
-            "Aceite de coco hidratante y reparador",
-            "Salud y cuidado para el cabello",
-            "Nutrición profunda para cabellos secos"
+            "Tratamiento sin enjuague - hidratación inmediata",
+            "Aceite de coco virgen con ácidos grasos esenciales",
+            "Penetra profundamente en la fibra capilar",
+            "Crea barrera protectora contra la humedad",
+            "Aporta brillo natural y suavidad sedosa",
+            "Ideal para cabellos secos, teñidos o dañados"
         ],
         businessAttributes: [
             "Ingrediente Popular: El aceite de coco tiene gran aceptación",
@@ -116,7 +131,7 @@ const products = [
             "Versatilidad: Funciona en todo tipo de cabello"
         ],
         idealFor: "Góndolas de cuidado capilar, sección de productos naturales, farmacias",
-        presentations: ["1000gr"],
+        presentations: ["1000g"],
         colors: ["Blanco con tapa marrón"],
         images: ["2.jpg", "3.jpg", "11.jpg", "12.jpg", "13.jpg", "31.jpg"],
         mainImage: "3.jpg"

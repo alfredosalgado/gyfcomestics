@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borialcanfor.gyfcomestics - Tu Proveedor Mayorista de Confianza</title>
-    <meta name="description" content="Abastece tu supermercado, minimarket o almacén con productos de belleza y cuidado personal de alta rotación. Precios mayoristas en VITA, Borialcanfor y Boriesmalte.">
+    <title>gyfcomestics - Fabricantes de Productos de Belleza y Cuidado Personal</title>
+    <meta name="description" content="Fabricantes de productos de belleza y cuidado personal. Venta por mayor y menor de VITA, Borialcanfor y Boriesmalte. Calidad directa de fábrica para tu negocio.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h2>Borialcanfor.gyfcomestics</h2>
+                    <h2>gyfcomestics</h2>
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <a href="#inicio" class="nav-link">Inicio</a>
@@ -37,15 +37,25 @@
     <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Borialcanfor.gyfcomestics: Tu Proveedor Mayorista de Confianza</h1>
-                <p class="hero-subtitle">Abastece tu supermercado, minimarket o almacén con productos de belleza y cuidado personal de alta rotación. Accede a precios exclusivos en VITA, Borialcanfor y Boriesmalte.</p>
+                <h1 class="hero-title">gyfcomestics: Fabricantes de Productos de Belleza</h1>
+                <p class="hero-subtitle">Somos fabricantes de productos de belleza y cuidado personal. Venta directa de fábrica por mayor y menor. Calidad garantizada en VITA, Borialcanfor y Boriesmalte para tu negocio.</p>
                 <a href="#catalogo" class="btn btn-primary">VER CATÁLOGO DE PRODUCTOS</a>
             </div>
+        </div>
+        
+        <!-- Scroll Down Arrow -->
+        <div class="scroll-down-arrow">
+            <a href="#why-choose-us" class="scroll-arrow-link">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="scroll-text">Descubre más</span>
+            </a>
         </div>
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="why-choose-us">
+    <section id="why-choose-us" class="why-choose-us">
         <div class="container">
             <h2 class="section-title">Impulsa tus Ventas con los Productos Correctos</h2>
             <div class="features-grid">
@@ -53,8 +63,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-dollar-sign"></i>
                     </div>
-                    <h3>Precios Mayoristas para tu Negocio</h3>
-                    <p>Te ofrecemos precios competitivos y escalas de compra pensadas para que maximices la rentabilidad de tu local.</p>
+                    <h3>Precios Directos de Fábrica</h3>
+                    <p>Como fabricantes, te ofrecemos los mejores precios del mercado. Venta por mayor y menor con escalas de compra que maximizan tu rentabilidad.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -121,9 +131,28 @@
             <!-- Category Filter -->
             <div class="category-filter">
                 <button class="filter-btn active" onclick="filterProducts('all')">Todos</button>
-                <button class="filter-btn" onclick="filterProducts('vita')">Línea Capilar VITA</button>
-                <button class="filter-btn" onclick="filterProducts('borialcanfor')">Cuidado de Pies Borialcanfor</button>
-                <button class="filter-btn" onclick="filterProducts('boriesmalte')">Manicure Boriesmalte</button>
+                <button class="filter-btn" onclick="filterProducts('vita')">VITA</button>
+                <button class="filter-btn" onclick="filterProducts('borialcanfor')">Borialcanfor</button>
+                <button class="filter-btn" onclick="filterProducts('boriesmalte')">Esmalte</button>
+            </div>
+
+            <!-- Category Descriptions -->
+            <div class="category-descriptions" id="category-descriptions">
+                <div class="category-description" id="desc-all">
+                    <p>Descubre nuestra línea completa de productos de belleza y cuidado personal fabricados con los más altos estándares de calidad.</p>
+                </div>
+                <div class="category-description hidden" id="desc-vita">
+                    <h3>VITA - Línea Capilar Premium</h3>
+                    <p>Tratamientos capilares sin enjuague de alta gama con tecnología avanzada. Nuestra línea VITA ofrece soluciones específicas para cada tipo de cabello, desde reparación intensiva hasta cuidado especializado para rizos. Cada producto combina ingredientes premium como aceite de argán, extracto de aguacate, aceite de coco y complejos vitamínicos para resultados profesionales.</p>
+                </div>
+                <div class="category-description hidden" id="desc-borialcanfor">
+                    <h3>Borialcanfor - Cuidado de Pies</h3>
+                    <p>El talco para pies líder en el mercado chileno. Borialcanfor ofrece más de 48 horas de protección, previene hongos y combate el mal olor con una fórmula refrescante y duradera. Disponible en formatos convenientes para el hogar y viajes, es un producto esencial de alta rotación para cualquier punto de venta.</p>
+                </div>
+                <div class="category-description hidden" id="desc-boriesmalte">
+                    <h3>Esmalte - Productos de Manicure</h3>
+                    <p>Removedor de esmalte de alta calidad con acción rápida y eficaz. Boriesmalte es perfecto para la compra impulsiva, con una fórmula suave pero efectiva que no deja residuos y cuenta con una agradable fragancia. Ideal para ubicar en cajas y puntos de venta estratégicos.</p>
+                </div>
             </div>
 
             <!-- Products Grid -->
@@ -146,8 +175,8 @@
     <!-- How to Buy Section -->
     <section id="como-comprar" class="how-to-buy">
         <div class="container">
-            <h2 class="section-title">Proceso de Compra Mayorista para Comercios</h2>
-            <p class="section-intro">En Borialcanfor.gyfcomestics, facilitamos el abastecimiento de tu local. Nuestro proceso es directo, sin carritos de compra ni complicaciones. Sigue estos simples pasos:</p>
+            <h2 class="section-title">Proceso de Compra Directo de Fábrica</h2>
+            <p class="section-intro">En gyfcomestics, como fabricantes, facilitamos la compra directa para tu negocio. Venta por mayor y menor sin intermediarios. Sigue estos simples pasos:</p>
             
             <div class="steps-container">
                 <div class="step">
@@ -180,9 +209,10 @@
             <div class="commercial-conditions">
                 <h3>Condiciones Comerciales</h3>
                 <ul>
-                    <li><strong>Compra Mínima:</strong> Consulta por nuestras condiciones de compra mínima para acceder a precios mayoristas.</li>
+                    <li><strong>Venta por Mayor y Menor:</strong> Ofrecemos precios especiales por volumen y también venta unitaria.</li>
                     <li><strong>Precios:</strong> Los valores indicados en la cotización no incluyen IVA.</li>
-                    <li><strong>Público Objetivo:</strong> Venta exclusiva para supermercados, minimarkets, almacenes y comercios establecidos.</li>
+                    <li><strong>Calidad de Fábrica:</strong> Todos nuestros productos son fabricados bajo estrictos controles de calidad.</li>
+                    <li><strong>Público Objetivo:</strong> Atendemos supermercados, minimarkets, almacenes, comercios y consumidores finales.</li>
                 </ul>
             </div>
         </div>
@@ -191,11 +221,11 @@
     <!-- About Us Section -->
     <section id="sobre-nosotros" class="about-us">
         <div class="container">
-            <h2 class="section-title">Borialcanfor.gyfcomestics: Proveedores para el Comercio Local</h2>
+            <h2 class="section-title">gyfcomestics: Fabricantes para el Comercio Local</h2>
             <div class="about-content">
-                <p>Somos Borialcanfor.gyfcomestics, una distribuidora con base en San Bernardo, Santiago, dedicada a fortalecer el comercio local. Nuestra misión es simple: proveer a supermercados, minimarkets y almacenes de todo Chile con productos de belleza y cuidado personal de alta rotación y excelente margen de ganancia.</p>
-                <p>Conocemos las necesidades de nuestros clientes y sabemos que la confianza, la rapidez y la calidad son clave. Por eso, nos enfocamos en un catálogo estratégico con marcas como VITA, Borialcanfor y Boriesmalte, garantizando productos que sus clientes finales ya conocen y prefieren.</p>
-                <p><strong>Más que un proveedor, queremos ser tu socio en el crecimiento de tu negocio.</strong></p>
+                <p>Somos gyfcomestics, fabricantes de productos de belleza y cuidado personal con base en San Bernardo, Santiago. Nuestra misión es simple: ofrecer productos de alta calidad directamente de nuestra fábrica a supermercados, minimarkets, almacenes y consumidores finales de todo Chile.</p>
+                <p>Como fabricantes, controlamos todo el proceso productivo, garantizando la mejor calidad y los mejores precios del mercado. Vendemos por mayor y menor, ofreciendo flexibilidad total para nuestros clientes. Nuestras marcas VITA, Borialcanfor y Boriesmalte son sinónimo de calidad y confianza.</p>
+                <p><strong>Más que fabricantes, somos tu socio estratégico en el crecimiento de tu negocio.</strong></p>
             </div>
         </div>
     </section>
@@ -211,23 +241,23 @@
                     <h3>Teléfonos de Venta</h3>
                     <div class="phone-numbers">
                         <div class="phone-item">
-                            <span>+56 9 9856 4727</span>
+                            <span>+56 9 8564 7272</span>
                             <div class="phone-buttons">
-                                <a href="tel:+56998564727" class="btn btn-call">
+                                <a href="tel:+56985647272" class="btn btn-call">
                                     <i class="fas fa-phone"></i> Llamar
                                 </a>
-                                <a href="https://api.whatsapp.com/send?phone=569985647272&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
+                                <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
                                     <i class="fab fa-whatsapp"></i> WhatsApp
                                 </a>
                             </div>
                         </div>
                         <div class="phone-item">
-                            <span>+56 9 9929 3467</span>
+                            <span>+56 9 9293 4675</span>
                             <div class="phone-buttons">
-                                <a href="tel:+56999293467" class="btn btn-call">
+                                <a href="tel:+56992934675" class="btn btn-call">
                                     <i class="fas fa-phone"></i> Llamar
                                 </a>
-                                <a href="https://api.whatsapp.com/send?phone=569992934675&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
+                                <a href="https://api.whatsapp.com/send?phone=56992934675&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
                                     <i class="fab fa-whatsapp"></i> WhatsApp
                                 </a>
                             </div>
@@ -253,13 +283,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Borialcanfor.gyfcomestics</h3>
-                    <p>Tu proveedor mayorista de confianza para productos de belleza y cuidado personal.</p>
+                    <h3>gyfcomestics</h3>
+                    <p>Fabricantes de productos de belleza y cuidado personal. Venta directa de fábrica por mayor y menor.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>+56 9 9856 4727</p>
-                    <p>+56 9 9929 3467</p>
+                    <p>+56 9 8564 7272</p>
+                    <p>+56 9 9293 4675</p>
                     <p>ventas@borialcanfor-gyf.cl</p>
                 </div>
                 <div class="footer-section">
@@ -269,10 +299,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Borialcanfor.gyfcomestics. Todos los derechos reservados.</p>
+                <p>&copy; 2024 gyfcomestics. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero información sobre sus productos" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="products.js"></script>
     <script src="script.js"></script>
