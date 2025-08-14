@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borialcanfor.gyfcomestics - Tu Proveedor Mayorista de Confianza</title>
+    <meta name="description" content="Abastece tu supermercado, minimarket o almacén con productos de belleza y cuidado personal de alta rotación. Precios mayoristas en VITA, Borialcanfor y Boriesmalte.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Borialcanfor.gyfcomestics</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#catalogo" class="nav-link">Catálogo</a>
+                    <a href="#como-comprar" class="nav-link">¿Cómo Comprar?</a>
+                    <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Borialcanfor.gyfcomestics: Tu Proveedor Mayorista de Confianza</h1>
+                <p class="hero-subtitle">Abastece tu supermercado, minimarket o almacén con productos de belleza y cuidado personal de alta rotación. Accede a precios exclusivos en VITA, Borialcanfor y Boriesmalte.</p>
+                <a href="#catalogo" class="btn btn-primary">VER CATÁLOGO DE PRODUCTOS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Impulsa tus Ventas con los Productos Correctos</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Precios Mayoristas para tu Negocio</h3>
+                    <p>Te ofrecemos precios competitivos y escalas de compra pensadas para que maximices la rentabilidad de tu local.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-basket"></i>
+                    </div>
+                    <h3>Ideal para el Retail</h3>
+                    <p>Nuestro catálogo está seleccionado con marcas y productos de alta demanda y rotación, perfectos para supermercados, minimarkets y almacenes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Compra Directa y Asesorada</h3>
+                    <p>Realiza tus pedidos de forma rápida y sencilla. Te atendemos directamente por WhatsApp para resolver todas tus dudas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands Section -->
+    <section class="featured-brands">
+        <div class="container">
+            <h2 class="section-title">Un Catálogo Estratégico para tu Local</h2>
+            <div class="brands-grid">
+                <div class="brand-card" onclick="showCategory('vita')">
+                    <img src="img/productos/11.jpg" alt="Línea Capilar VITA" class="brand-image">
+                    <div class="brand-content">
+                        <h3>Línea Capilar VITA</h3>
+                        <p>Calidad de salón a un precio que tus clientes no podrán resistir.</p>
+                    </div>
+                </div>
+                <div class="brand-card" onclick="showCategory('borialcanfor')">
+                    <img src="img/productos/16.jpg" alt="Borialcanfor" class="brand-image">
+                    <div class="brand-content">
+                        <h3>Borialcanfor</h3>
+                        <p>El talco para pies número uno, un indispensable en la sección de cuidado personal.</p>
+                    </div>
+                </div>
+                <div class="brand-card" onclick="showCategory('boriesmalte')">
+                    <img src="img/productos/19.jpg" alt="Boriesmalte" class="brand-image">
+                    <div class="brand-content">
+                        <h3>Boriesmalte</h3>
+                        <p>Productos de manicure económicos y de gran calidad, ideales para la compra impulsiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para Llenar tus Estantes con Productos Ganadores?</h2>
+            <p>Explora nuestro catálogo y empieza a cotizar hoy mismo.</p>
+            <a href="#catalogo" class="btn btn-secondary">QUIERO VER LOS PRODUCTOS</a>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalogo" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Catálogo de Productos</h2>
+            
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" onclick="filterProducts('all')">Todos</button>
+                <button class="filter-btn" onclick="filterProducts('vita')">Línea Capilar VITA</button>
+                <button class="filter-btn" onclick="filterProducts('borialcanfor')">Cuidado de Pies Borialcanfor</button>
+                <button class="filter-btn" onclick="filterProducts('boriesmalte')">Manicure Boriesmalte</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Buy Section -->
+    <section id="como-comprar" class="how-to-buy">
+        <div class="container">
+            <h2 class="section-title">Proceso de Compra Mayorista para Comercios</h2>
+            <p class="section-intro">En Borialcanfor.gyfcomestics, facilitamos el abastecimiento de tu local. Nuestro proceso es directo, sin carritos de compra ni complicaciones. Sigue estos simples pasos:</p>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Explora el Catálogo</h3>
+                    <p>Revisa nuestra completa selección de productos y haz clic en los que te interesan para ver sus detalles y presentaciones.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Cotiza Directo a Nuestro WhatsApp</h3>
+                    <p>Usa el botón "Cotizar por WhatsApp" en cada producto. Esto abrirá un chat directo con nuestro equipo de ventas.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Recibe tu Cotización Formal</h3>
+                    <p>Te responderemos a la brevedad con los precios por mayor, unidades por caja y la información de stock actualizada.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Confirma y Paga tu Pedido</h3>
+                    <p>Una vez que aceptes la cotización, te proporcionaremos los datos para realizar el pago mediante transferencia bancaria.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Coordinamos el Envío o Retiro</h3>
+                    <p>Confirmado el pago, tu pedido será preparado. Realizamos envíos a todo Chile o puedes coordinar el retiro en San Bernardo.</p>
+                </div>
+            </div>
+
+            <div class="commercial-conditions">
+                <h3>Condiciones Comerciales</h3>
+                <ul>
+                    <li><strong>Compra Mínima:</strong> Consulta por nuestras condiciones de compra mínima para acceder a precios mayoristas.</li>
+                    <li><strong>Precios:</strong> Los valores indicados en la cotización no incluyen IVA.</li>
+                    <li><strong>Público Objetivo:</strong> Venta exclusiva para supermercados, minimarkets, almacenes y comercios establecidos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="sobre-nosotros" class="about-us">
+        <div class="container">
+            <h2 class="section-title">Borialcanfor.gyfcomestics: Proveedores para el Comercio Local</h2>
+            <div class="about-content">
+                <p>Somos Borialcanfor.gyfcomestics, una distribuidora con base en San Bernardo, Santiago, dedicada a fortalecer el comercio local. Nuestra misión es simple: proveer a supermercados, minimarkets y almacenes de todo Chile con productos de belleza y cuidado personal de alta rotación y excelente margen de ganancia.</p>
+                <p>Conocemos las necesidades de nuestros clientes y sabemos que la confianza, la rapidez y la calidad son clave. Por eso, nos enfocamos en un catálogo estratégico con marcas como VITA, Borialcanfor y Boriesmalte, garantizando productos que sus clientes finales ya conocen y prefieren.</p>
+                <p><strong>Más que un proveedor, queremos ser tu socio en el crecimiento de tu negocio.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-intro">¿Listo para realizar un pedido o tienes alguna consulta? Nuestro equipo de ventas está disponible para atenderte.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Teléfonos de Venta</h3>
+                    <div class="phone-numbers">
+                        <div class="phone-item">
+                            <span>+56 9 9856 4727</span>
+                            <div class="phone-buttons">
+                                <a href="tel:+56998564727" class="btn btn-call">
+                                    <i class="fas fa-phone"></i> Llamar
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=569985647272&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        <div class="phone-item">
+                            <span>+56 9 9929 3467</span>
+                            <div class="phone-buttons">
+                                <a href="tel:+56999293467" class="btn btn-call">
+                                    <i class="fas fa-phone"></i> Llamar
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=569992934675&text=Hola, quiero información sobre sus productos mayoristas" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:ventas@borialcanfor-gyf.cl">ventas@borialcanfor-gyf.cl</a>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes, de 08:00 a 20:00 hrs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Borialcanfor.gyfcomestics</h3>
+                    <p>Tu proveedor mayorista de confianza para productos de belleza y cuidado personal.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+56 9 9856 4727</p>
+                    <p>+56 9 9929 3467</p>
+                    <p>ventas@borialcanfor-gyf.cl</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ubicación</h4>
+                    <p>San Bernardo, Santiago</p>
+                    <p>Chile</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Borialcanfor.gyfcomestics. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

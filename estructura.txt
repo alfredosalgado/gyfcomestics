@@ -1,0 +1,146 @@
+Estructura del Sitio Web (Menú de Navegación)
+Mantendremos la estructura simple y efectiva que definimos:
+
+Inicio
+
+Catálogo de Productos
+
+Línea Capilar VITA
+
+Cuidado de Pies Borialcanfor
+
+Manicure Boriesmalte
+
+¿Cómo Comprar?
+
+Sobre Nosotros
+
+Contacto
+
+Contenido Detallado por Sección (Textos Finales)
+1. Página de Inicio
+Banner Principal (Imagen de alta calidad con todos los productos)
+
+Título: Borialcanfor.gyfcomestics: Tu Proveedor Mayorista de Confianza
+
+Subtítulo: Abastece tu supermercado, minimarket o almacén con productos de belleza y cuidado personal de alta rotación. Accede a precios exclusivos en VITA, Borialcanfor y Boriesmalte.
+
+Botón Principal: VER CATÁLOGO DE PRODUCTOS
+
+Sección: ¿Por Qué Elegirnos? (con íconos)
+
+Título: Impulsa tus Ventas con los Productos Correctos
+
+(Icono de $) - Precios Mayoristas para tu Negocio: Te ofrecemos precios competitivos y escalas de compra pensadas para que maximices la rentabilidad de tu local.
+
+(Icono de canasta de compras) - Ideal para el Retail: Nuestro catálogo está seleccionado con marcas y productos de alta demanda y rotación, perfectos para supermercados, minimarkets y almacenes.
+
+(Icono de WhatsApp) - Compra Directa y Asesorada: Realiza tus pedidos de forma rápida y sencilla. Te atendemos directamente por WhatsApp para resolver todas tus dudas y asegurar que compres exactamente lo que necesitas.
+
+Sección: Nuestras Marcas Destacadas
+
+Título: Un Catálogo Estratégico para tu Local
+
+(Tres imágenes de alta calidad, una por marca, que lleven a su categoría).
+
+Imagen 1: Línea Capilar VITA: Calidad de salón a un precio que tus clientes no podrán resistir.
+
+Imagen 2: Borialcanfor: El talco para pies número uno, un indispensable en la sección de cuidado personal.
+
+Imagen 3: Boriesmalte: Productos de manicure económicos y de gran calidad, ideales para la compra impulsiva.
+
+Llamada a la Acción Final
+
+Título: ¿Listo para Llenar tus Estantes con Productos Ganadores?
+
+Subtítulo: Explora nuestro catálogo y empieza a cotizar hoy mismo.
+
+Botón: QUIERO VER LOS PRODUCTOS
+
+2. Catálogo de Productos
+La estructura y funcionalidad se mantienen, pero los textos de la página de detalle se ajustan.
+
+Página de Detalle de Producto (Ejemplo: Borialcanfor)
+
+Galería de Imágenes: Fotos del producto en sus dos formatos.
+
+Título del Producto: Borialcanfor Talco para los Pies (Formato 120g y 60g)
+
+Descripción Detallada:
+
+El talco para pies Borialcanfor es un producto líder y de alta demanda, ideal para la venta en supermercados, minimarkets y almacenes. Su fórmula refrescante previene la aparición de hongos y combate el mal olor, ofreciendo protección y frescura duradera.
+
+Atributos Clave para tu Negocio:
+
+Alta Rotación: Un producto esencial en el canasto de cuidado personal de los chilenos.
+
+Formatos Convenientes: Disponible en 120g para el hogar y 60g para viajes, cubriendo todas las necesidades.
+
+Reconocimiento de Marca: Un nombre de confianza que los clientes buscan y reconocen fácilmente.
+
+Libre de testeo animal.
+
+Ideal para: Góndolas de farmacia, sección de cuidado personal, cajas de minimarket y estantes de almacén.
+
+Botón Gigante: COTIZAR POR WHATSAPP
+
+Enlaces de los Botones de WhatsApp (muy importante):
+
+Para el primer número: https://api.whatsapp.com/send?phone=569985647272&text=Hola, quiero cotizar el producto: [NOMBRE DEL PRODUCTO]
+
+Para el segundo número (o puedes usar solo uno para ventas): https://api.whatsapp.com/send?phone=569992934675&text=Hola, quiero cotizar el producto: [NOMBRE DEL PRODUCTO]
+
+3. ¿Cómo Comprar?
+Título: Proceso de Compra Mayorista para Comercios
+
+Texto Introductorio:
+
+En Borialcanfor.gyfcomestics, facilitamos el abastecimiento de tu local. Nuestro proceso es directo, sin carritos de compra ni complicaciones. Sigue estos simples pasos:
+
+Pasos Detallados:
+
+Explora el Catálogo: Revisa nuestra completa selección de productos y haz clic en los que te interesan para ver sus detalles y presentaciones.
+
+Cotiza Directo a Nuestro WhatsApp: Usa el botón "Cotizar por WhatsApp" en cada producto. Esto abrirá un chat directo con nuestro equipo de ventas, con el nombre del producto ya incluido para tu comodidad.
+
+Recibe tu Cotización Formal: Te responderemos a la brevedad con los precios por mayor, unidades por caja (si aplica) y la información de stock actualizada.
+
+Confirma y Paga tu Pedido: Una vez que aceptes la cotización, te proporcionaremos los datos para realizar el pago mediante transferencia bancaria.
+
+Coordinamos el Envío o Retiro: Confirmado el pago, tu pedido será preparado. Realizamos envíos a todo Chile (por pagar) o puedes coordinar el retiro directamente en nuestra bodega en San Bernardo.
+
+Sección de Condiciones Comerciales:
+
+Compra Mínima: Consulta por nuestras condiciones de compra mínima para acceder a precios mayoristas.
+
+Precios: Los valores indicados en la cotización no incluyen IVA.
+
+Público Objetivo: Venta exclusiva para supermercados, minimarkets, almacenes y comercios establecidos.
+
+4. Sobre Nosotros
+Título: Borialcanfor.gyfcomestics: Proveedores para el Comercio Local
+
+Texto:
+
+Somos Borialcanfor.gyfcomestics, una distribuidora con base en San Bernardo, Santiago, dedicada a fortalecer el comercio local. Nuestra misión es simple: proveer a supermercados, minimarkets y almacenes de todo Chile con productos de belleza y cuidado personal de alta rotación y excelente margen de ganancia.
+
+Conocemos las necesidades de nuestros clientes y sabemos que la confianza, la rapidez y la calidad son clave. Por eso, nos enfocamos en un catálogo estratégico con marcas como VITA, Borialcanfor y Boriesmalte, garantizando productos que sus clientes finales ya conocen y prefieren.
+
+Más que un proveedor, queremos ser tu socio en el crecimiento de tu negocio.
+
+5. Contacto
+Título: Contáctanos
+
+Texto: ¿Listo para realizar un pedido o tienes alguna consulta? Nuestro equipo de ventas está disponible para atenderte.
+
+Información de Contacto:
+
+Teléfonos de Venta:
+
++56 9 9856 4727 (con botón clicable para llamar y para WhatsApp)
+
++56 9 9929 3467 (con botón clicable para llamar y para WhatsApp)
+
+Email: ventas@borialcanfor-gyf.cl (o el email que prefieras)
+
+Horario de Atención: Lunes a Viernes, de 08:00 a 20:00 hrs.
