@@ -25,12 +25,12 @@ const products = [
         idealFor: "Góndolas de belleza, sección de cuidado capilar, farmacias y perfumerías dentro de supermercados",
         presentations: ["1.000ml", "1kg"],
         colors: ["Negro", "Dorado"],
-        images: ["1.jpg", "2.jpg", "4.jpg", "10.jpg", "14.jpg", "15.jpg", "17.jpg", "18.jpg", "22.jpg", "24.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg"],
-        mainImage: "1.jpg"
+        images: ["4.jpg", "10.jpg", "14.jpg", "15.jpg", "17.jpg", "18.jpg", "22.jpg", "24.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg"],
+        mainImage: "15.jpg"
     },
     {
         id: 2,
-        name: "VITA Baño de Crema - Vivan los Crespos",
+        name: "VITA Baño de Crema - Vivan los Rizos",
         category: "vita",
         categoryName: "Línea Capilar VITA",
         shortDescription: "Tratamiento sin enjuague especializado para cabello rizado",
@@ -106,7 +106,7 @@ const products = [
         idealFor: "Sección de productos naturales, góndolas de belleza, almacenes",
         presentations: ["1000g"],
         colors: ["Verde claro"],
-        images: ["2.jpg", "6.jpg", "31.jpg"],
+        images: ["6.jpg"],
         mainImage: "6.jpg"
     },
     {
