@@ -245,7 +245,7 @@
 
         function openWhatsAppQuote(phone, country) {
             const productTitle = document.querySelector('.product-title, h1');
-            let productName = productTitle ? productTitle.textContent.trim() : 'Producto';
+            let productName = productTitle ? productTitle.textContent.trim() : 'VITA Baño de Crema - Aceite de Coco';
             
             const message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;

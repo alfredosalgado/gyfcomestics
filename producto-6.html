@@ -55,6 +55,9 @@
                         <img src="img/productos/16.jpg" alt="Borialcanfor Talco" class="thumbnail active" onclick="changeMainImage('img/productos/16.jpg')">
                         <img src="img/productos/26.jpg" alt="Borialcanfor Talco" class="thumbnail" onclick="changeMainImage('img/productos/26.jpg')">
                         <img src="img/productos/28.jpg" alt="Borialcanfor Talco" class="thumbnail" onclick="changeMainImage('img/productos/28.jpg')">
+                        <img src="img/productos/bori1.jpg" alt="Borialcanfor Talco" class="thumbnail" onclick="changeMainImage('img/productos/bori1.jpg')">
+                        <img src="img/productos/bori2.jpg" alt="Borialcanfor Talco" class="thumbnail" onclick="changeMainImage('img/productos/bori2.jpg')">
+
                         <img src="img/productos/29.jpg" alt="Borialcanfor Talco" class="thumbnail" onclick="changeMainImage('img/productos/29.jpg')">
                     </div>
                 </div>
@@ -68,8 +71,9 @@
                     <div class="product-presentations">
                         <h3>Presentaciones Disponibles</h3>
                         <div class="presentations-list">
-                            <span class="presentation-tag">120g</span>
-                            <span class="presentation-tag">60g</span>
+                            <span class="presentation-tag">120g - Formato original (redondo) y nuevo formato (aplanado)</span>
+                            <span class="presentation-tag">100g - Formato original (redondo) y nuevo formato (aplanado)</span>
+                            <span class="presentation-tag">80g - Formato original (redondo) y nuevo formato (aplanado)</span>
                         </div>
                     </div>
 
@@ -255,13 +259,13 @@
         }
 
         function openWhatsAppQuote(phone, country) {
-            const productName = document.querySelector('h1').textContent;
-            const productImage = document.querySelector('.product-image img').src;
+            const productTitle = document.querySelector('.product-title, h1');
+            let productName = productTitle ? productTitle.textContent.trim() : 'Borialcanfor Talco para los Pies';
             
-            const message = `Hola! Me interesa cotizar el producto: ${productName}. Imagen: ${productImage}`;
-            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            
+            const message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
+            
             closeQuoteModal();
         }
 

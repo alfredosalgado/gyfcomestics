@@ -157,12 +157,12 @@ const products = [
         ],
         businessAttributes: [
             "Alta Rotación: Un producto esencial en el canasto de cuidado personal de los chilenos",
-            "Formatos Convenientes: Disponible en 120g para el hogar y 60g para viajes, cubriendo todas las necesidades",
+            "Formatos Convenientes: Disponible en 120g y 100g (formato original redondo y nuevo formato aplanado) para el hogar, y 80g para viajes, cubriendo todas las necesidades",
             "Reconocimiento de Marca: Un nombre de confianza que los clientes buscan y reconocen fácilmente",
             "Sostenibilidad: Envase reutilizable"
         ],
         idealFor: "Góndolas de farmacia, sección de cuidado personal, cajas de minimarket y estantes de almacén",
-        presentations: ["120g", "60g"],
+        presentations: ["120g - Formato original (redondo) y nuevo formato (aplanado)", "100g - Formato original (redondo) y nuevo formato (aplanado)", "80g"],
         colors: ["Blanco con tapa marrón"],
         images: ["16.jpg", "26.jpg", "28.jpg", "29.jpg"],
         mainImage: "16.jpg",

@@ -249,13 +249,13 @@
         }
 
         function openWhatsAppQuote(phone, country) {
-            const productName = document.querySelector('h1').textContent;
-            const productImage = document.querySelector('.product-image img').src;
+            const productTitle = document.querySelector('.product-title, h1');
+            let productName = productTitle ? productTitle.textContent.trim() : 'Boriesmalte Quitaesmalte';
             
-            const message = `Hola! Me interesa cotizar el producto: ${productName}. Imagen: ${productImage}`;
-            const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            
+            const message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
+            
             closeQuoteModal();
         }
 
