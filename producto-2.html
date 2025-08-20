@@ -73,24 +73,23 @@
                     <div class="product-presentations">
                         <h3>Presentaciones Disponibles</h3>
                         <div class="presentations-list">
-                            <span class="presentation-tag">1.000ml</span>
+                            <span class="presentation-tag">400g</span>
+                            <span class="presentation-tag">1000g</span>
+
                         </div>
                     </div>
 
                     <div class="product-colors">
                         <h3>Colores Disponibles</h3>
                         <div class="colors-list">
-                            <span class="color-tag">Turquesa</span>
+                            <span class="color-tag">Amarillo, consultar por otros colores</span>
                         </div>
                     </div>
 
                     <div class="whatsapp-buttons-section">
-                        <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero cotizar el producto: VITA Baño de Crema - Vivan los Rizos" target="_blank" class="btn btn-whatsapp-large">
+                        <button onclick="openQuoteModal()" class="btn btn-whatsapp-large">
                             <i class="fab fa-whatsapp"></i> COTIZAR POR WHATSAPP
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=56992934675&text=Hola, quiero cotizar el producto: VITA Baño de Crema - Vivan los Rizos" target="_blank" class="btn btn-whatsapp-large">
-                            <i class="fab fa-whatsapp"></i> COTIZAR (LÍNEA 2)
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -99,7 +98,7 @@
             <div class="product-description-section">
                 <div class="description-content">
                     <h2>Descripción del Producto</h2>
-                    <p>Baño de crema sin enjuague específicamente formulado para cabello rizado o 'crespo'. Su fórmula única con cebolla, jalea real y proteína de leche define los rizos mientras los hidrata profundamente. Ideal para el creciente mercado de cuidado capilar especializado.</p>
+                    <p>Baño de crema sin enjuague ideal para cabellos rizados que gracias a su especial selección de ingredientes ayuda a controlar el frizz y definir mejor tus crespos. Su fórmula única con jalea real, cebolla y proteína de leche está pensada para dejar un cabello definido e hidratado profundamente.</p>
                 </div>
 
                 <div class="benefits-section">
@@ -149,14 +148,18 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>+56 9 8564 7272</p>
-                    <p>+56 9 9293 4675</p>
+                    <p>+56 9 2033 0717 (Chile)</p>
+                    <p>+58 424 437 1349 (Venezuela)</p>
+                    <p>+57 692 306 7114 (Colombia)</p>
+                    <p>+55 164 992 573 (Brasil)</p>
                     <p>contacto_borialcanfor@gyfcosmetics.com</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Ubicación</h4>
-                    <p>San Bernardo, Santiago</p>
-                    <p>Chile</p>
+                    <h4>Ubicaciones</h4>
+                    <p><strong>Chile:</strong> Maule 3140, Talca</p>
+                    <p><strong>Venezuela:</strong> Tocuyito, EDO Carabobo</p>
+                    <p><strong>Colombia:</strong> Carrera 39B No.15C-56 Zona Industrial Montevideo</p>
+                    <p><strong>Brasil:</strong> R. Ituiutaba 289- Sao Benedito</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -165,10 +168,60 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero información sobre VITA Baño de Crema - Vivan los Rizos" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Quote Button -->
+    <button class="quote-float" onclick="openQuoteModal()" aria-label="Cotizar por WhatsApp">
+    </button>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content quote-modal-content">
+            <span class="close" onclick="closeQuoteModal()">&times;</span>
+            <div class="modal-body">
+                <h2 class="quote-modal-title">Cotizar por WhatsApp</h2>
+                <p class="quote-modal-subtitle">Selecciona el país para cotizar nuestros productos:</p>
+                
+                <div class="quote-buttons-grid">
+                    <button class="btn-quote-country active" onclick="openWhatsAppQuote('+56920330717', 'Chile')">
+                        <div class="country-flag">🇨🇱</div>
+                        <div class="country-info">
+                            <span class="country-name">Chile</span>
+                            <span class="country-phone">+56 9 2033 0717</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country active" onclick="openWhatsAppQuote('+5684244371349', 'Venezuela')">
+                        <div class="country-flag">🇻🇪</div>
+                        <div class="country-info">
+                            <span class="country-name">Venezuela</span>
+                            <span class="country-phone">+58 424 437 1349</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country disabled" onclick="showComingSoon('Colombia')">
+                        <div class="country-flag">🇨🇴</div>
+                        <div class="country-info">
+                            <span class="country-name">Colombia</span>
+                            <span class="country-phone">+57 692 306 7114</span>
+                            <span class="coming-soon">Próximamente</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country disabled" onclick="showComingSoon('Brasil')">
+                        <div class="country-flag">🇧🇷</div>
+                        <div class="country-info">
+                            <span class="country-name">Brasil</span>
+                            <span class="country-phone">+55 164 992 573</span>
+                            <span class="coming-soon">Próximamente</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Función para cambiar imagen principal
@@ -192,6 +245,46 @@
                     navMenu.classList.toggle('active');
                     navToggle.classList.toggle('active');
                 });
+            }
+        });
+
+        // Funciones para el modal de cotización
+        function openQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function openWhatsAppQuote(phone, country) {
+            const productTitle = document.querySelector('.product-title, h1');
+            let productName = productTitle ? productTitle.textContent.trim() : 'Producto';
+            
+            const message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            closeQuoteModal();
+        }
+
+        function showComingSoon(country) {
+            alert(`El servicio para ${country} estará disponible próximamente. ¡Mantente atento!`);
+        }
+
+        // Cerrar modal al hacer clic fuera de él
+        window.addEventListener('click', function(event) {
+            const quoteModal = document.getElementById('quote-modal');
+            if (event.target === quoteModal) {
+                closeQuoteModal();
             }
         });
     </script>

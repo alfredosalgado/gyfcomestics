@@ -7,7 +7,7 @@ const products = [
         category: "vita",
         categoryName: "Línea Capilar VITA",
         shortDescription: "Tratamiento sin enjuague intensivo premium",
-        fullDescription: "El VITA Gold Premium es un tratamiento capilar sin enjuague de alta gama con tecnología avanzada de reparación instantánea. Su fórmula concentrada con activos premium ofrece resultados profesionales de salón desde la primera aplicación, ideal para cabellos severamente dañados.",
+        fullDescription: "VITA Gold Premium es un tratamiento capilar sin enjuague, con tecnología avanzada que ofrece reparación en cada aplicación dejando el cabello suave y sedoso hasta las puntas. Su fórmula concentrada ofrece resultados desde la primera aplicación, ideal para cabellos severamente dañados por químicos y altas temperaturas.",
         benefits: [
             "Tratamiento sin enjuague - reparación instantánea",
             "Tecnología premium de reconstrucción capilar",
@@ -23,7 +23,7 @@ const products = [
             "Margen Atractivo: Excelente rentabilidad para tu negocio"
         ],
         idealFor: "Góndolas de belleza, sección de cuidado capilar, farmacias y perfumerías dentro de supermercados",
-        presentations: ["1.000ml", "1kg"],
+        presentations: ["400g", "1000g"],
         colors: ["Negro", "Dorado"],
         images: ["4.jpg", "10.jpg", "14.jpg", "15.jpg", "17.jpg", "18.jpg", "22.jpg", "24.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg"],
         mainImage: "15.jpg"
@@ -50,10 +50,10 @@ const products = [
             "Presentación Atractiva: Envase turquesa que destaca en góndola"
         ],
         idealFor: "Sección de cuidado capilar especializado, góndolas de belleza, farmacias",
-        presentations: ["1.000ml"],
+        presentations: ["400g", "1000g"],
         colors: ["Turquesa"],
         images: ["8.jpg", "21.jpg", "25.jpg", "30.jpg", "31.jpg", "33.jpg"],
-        mainImage: "8.jpg"
+        mainImage: "viva3.jpg"
     },
     {
         id: 3,
@@ -77,7 +77,7 @@ const products = [
             "Presentación Distintiva: Envase morado fácil de identificar"
         ],
         idealFor: "Góndolas de cuidado natural, sección de belleza, minimarkets",
-        presentations: ["1000g"],
+        presentations: ["400g", "1000g"],
         colors: ["Morado"],
         images: ["5.jpg", "7.jpg", "9.jpg", "31.jpg", "33.jpg"],
         mainImage: "5.jpg"

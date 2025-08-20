@@ -517,3 +517,55 @@ function optimizePerformance() {
 
 // Aplicar optimizaciones
 optimizePerformance();
+
+// Funciones para el modal de cotización
+function openQuoteModal() {
+    const modal = document.getElementById('quote-modal');
+    if (modal) {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeQuoteModal() {
+    const modal = document.getElementById('quote-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+function openWhatsAppQuote(phone, country) {
+    // Obtener el nombre del producto actual si estamos en una página de producto
+    let productName = '';
+    const productTitle = document.querySelector('.product-title, h1');
+    if (productTitle) {
+        productName = productTitle.textContent.trim();
+    }
+    
+    // Crear mensaje personalizado
+    let message = '';
+    if (productName) {
+        message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
+    } else {
+        message = `Hola, quiero información y cotización de productos para ${country}`;
+    }
+    
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
+    // Cerrar el modal después de abrir WhatsApp
+    closeQuoteModal();
+}
+
+function showComingSoon(country) {
+    alert(`El servicio para ${country} estará disponible próximamente. ¡Mantente atento!`);
+}
+
+// Cerrar modal al hacer clic fuera de él
+window.addEventListener('click', function(event) {
+    const quoteModal = document.getElementById('quote-modal');
+    if (event.target === quoteModal) {
+        closeQuoteModal();
+    }
+});

@@ -52,8 +52,6 @@
                         <img src="img/productos/15.jpg" alt="VITA Gold Premium" id="main-product-image">
                     </div>
                     <div class="thumbnail-gallery">
-                        <img src="img/productos/4.jpg" alt="VITA Gold Premium" class="thumbnail" onclick="changeMainImage('img/productos/4.jpg')">
-                        <img src="img/productos/10.jpg" alt="VITA Gold Premium" class="thumbnail" onclick="changeMainImage('img/productos/10.jpg')">
                         <img src="img/productos/14.jpg" alt="VITA Gold Premium" class="thumbnail" onclick="changeMainImage('img/productos/14.jpg')">
                         <img src="img/productos/15.jpg" alt="VITA Gold Premium" class="thumbnail" onclick="changeMainImage('img/productos/15.jpg')">
                     </div>
@@ -68,8 +66,8 @@
                     <div class="product-presentations">
                         <h3>Presentaciones Disponibles</h3>
                         <div class="presentations-list">
-                            <span class="presentation-tag">1.000ml</span>
-                            <span class="presentation-tag">1kg</span>
+                            <span class="presentation-tag">400g</span>
+                            <span class="presentation-tag">1000g</span>
                         </div>
                     </div>
 
@@ -82,12 +80,9 @@
                     </div>
 
                     <div class="whatsapp-buttons-section">
-                        <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero cotizar el producto: VITA Gold Premium" target="_blank" class="btn btn-whatsapp-large">
+                        <button onclick="openQuoteModal()" class="btn btn-whatsapp-large">
                             <i class="fab fa-whatsapp"></i> COTIZAR POR WHATSAPP
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=56992934675&text=Hola, quiero cotizar el producto: VITA Gold Premium" target="_blank" class="btn btn-whatsapp-large">
-                            <i class="fab fa-whatsapp"></i> COTIZAR (LÍNEA 2)
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -96,7 +91,7 @@
             <div class="product-description-section">
                 <div class="description-content">
                     <h2>Descripción del Producto</h2>
-                    <p>El VITA Gold Premium es un tratamiento capilar sin enjuague de alta gama con tecnología avanzada de reparación instantánea. Su fórmula concentrada con activos premium ofrece resultados profesionales de salón desde la primera aplicación, ideal para cabellos severamente dañados.</p>
+                    <p>VITA Gold Premium es un tratamiento capilar sin enjuague, con tecnología avanzada que ofrece reparación en cada aplicación dejando el cabello suave y sedoso hasta las puntas. Su fórmula concentrada ofrece resultados desde la primera aplicación, ideal para cabellos severamente dañados por químicos y altas temperaturas.</p>
                 </div>
 
                 <div class="benefits-section">
@@ -115,7 +110,7 @@
                     <h3>Atributos Clave para tu Negocio</h3>
                     <ul class="business-attributes-list">
                         <li>Alta Rotación: Producto premium con gran demanda en el mercado chileno</li>
-                        <li>Formatos Convenientes: Disponible en presentaciones de 1.000ml y 1kg</li>
+                        <li>Formatos Convenientes: Disponible en presentaciones de 400g y 1000g</li>
                         <li>Reconocimiento de Marca: VITA es una marca reconocida en el cuidado capilar</li>
                         <li>Margen Atractivo: Excelente rentabilidad para tu negocio</li>
                     </ul>
@@ -146,14 +141,18 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>+56 9 8564 7272</p>
-                    <p>+56 9 9293 4675</p>
+                    <p>+56 9 2033 0717 (Chile)</p>
+                    <p>+58 424 437 1349 (Venezuela)</p>
+                    <p>+57 692 306 7114 (Colombia)</p>
+                    <p>+55 164 992 573 (Brasil)</p>
                     <p>contacto_borialcanfor@gyfcosmetics.com</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Ubicación</h4>
-                    <p>San Bernardo, Santiago</p>
-                    <p>Chile</p>
+                    <h4>Ubicaciones</h4>
+                    <p><strong>Chile:</strong> Maule 3140, Talca</p>
+                    <p><strong>Venezuela:</strong> Tocuyito, EDO Carabobo</p>
+                    <p><strong>Colombia:</strong> Carrera 39B No.15C-56 Zona Industrial Montevideo</p>
+                    <p><strong>Brasil:</strong> R. Ituiutaba 289- Sao Benedito</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -162,10 +161,60 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://api.whatsapp.com/send?phone=56985647272&text=Hola, quiero información sobre VITA Gold Premium" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Quote Button -->
+    <button class="quote-float" onclick="openQuoteModal()" aria-label="Cotizar por WhatsApp">
+    </button>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content quote-modal-content">
+            <span class="close" onclick="closeQuoteModal()">&times;</span>
+            <div class="modal-body">
+                <h2 class="quote-modal-title">Cotizar por WhatsApp</h2>
+                <p class="quote-modal-subtitle">Selecciona el país para cotizar nuestros productos:</p>
+                
+                <div class="quote-buttons-grid">
+                    <button class="btn-quote-country active" onclick="openWhatsAppQuote('+56920330717', 'Chile')">
+                        <div class="country-flag">🇨🇱</div>
+                        <div class="country-info">
+                            <span class="country-name">Chile</span>
+                            <span class="country-phone">+56 9 2033 0717</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country active" onclick="openWhatsAppQuote('+5684244371349', 'Venezuela')">
+                        <div class="country-flag">🇻🇪</div>
+                        <div class="country-info">
+                            <span class="country-name">Venezuela</span>
+                            <span class="country-phone">+58 424 437 1349</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country disabled" onclick="showComingSoon('Colombia')">
+                        <div class="country-flag">🇨🇴</div>
+                        <div class="country-info">
+                            <span class="country-name">Colombia</span>
+                            <span class="country-phone">+57 692 306 7114</span>
+                            <span class="coming-soon">Próximamente</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                    
+                    <button class="btn-quote-country disabled" onclick="showComingSoon('Brasil')">
+                        <div class="country-flag">🇧🇷</div>
+                        <div class="country-info">
+                            <span class="country-name">Brasil</span>
+                            <span class="country-phone">+55 164 992 573</span>
+                            <span class="coming-soon">Próximamente</span>
+                        </div>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Función para cambiar imagen principal
@@ -189,6 +238,46 @@
                     navMenu.classList.toggle('active');
                     navToggle.classList.toggle('active');
                 });
+            }
+        });
+
+        // Funciones para el modal de cotización
+        function openQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function openWhatsAppQuote(phone, country) {
+            const productTitle = document.querySelector('.product-title, h1');
+            let productName = productTitle ? productTitle.textContent.trim() : 'VITA Gold Premium';
+            
+            const message = `Hola, quiero cotizar el producto: ${productName} para ${country}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            closeQuoteModal();
+        }
+
+        function showComingSoon(country) {
+            alert(`El servicio para ${country} estará disponible próximamente. ¡Mantente atento!`);
+        }
+
+        // Cerrar modal al hacer clic fuera de él
+        window.addEventListener('click', function(event) {
+            const quoteModal = document.getElementById('quote-modal');
+            if (event.target === quoteModal) {
+                closeQuoteModal();
             }
         });
     </script>
